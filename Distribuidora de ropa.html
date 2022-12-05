@@ -2,68 +2,18 @@
 <html>
     <head>
         <title>Distribuidora de ropa</title>
-        <script language="javascript">
-         <!--
-            $(document).ready(function(){
-	        $("#flip").click(function(){
-	        $("#panel").slideDown("slow");
-	         });    
-	        });$(document).ready(function(){
-	        $("#flip2").click(function(){
-	        $("#panel2").slideDown("slow");
-	         });
-        	});
-             //-->
-        </script>
-		 <style>
-      body {
-        background-color: #87ccc1;
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        text-align: center;
-        width: 50%;
-        margin: auto;
-        margin-top: 30px;
-      }
-      table {
-        border: 3px solid #3385cc;
-        padding: 20px 50px;
-        margin-top: 20px;
-        border-radius: 5px;
-        background-color: #97bdf7;
-      }
-
-    #panel, #flip {
- padding: 5px;
- text-align: center;
-background-color: darkgrey;
- border: solid 1px #c3c3c3;
-}
-#panel {
- padding: 4px;
- display: none;
-}
-#panel2, #flip2 {
- padding: 5px;
- text-align: center;
-background-color: darkgrey;
- border: solid 1px #c3c3c3;
-}
-#panel2 {
- padding: 4px;
- display: none;
-}
-    .Estilo1 {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 25px;
-	color: #000000;
-}
-    </style>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script>
- &nbsp;
+		<marquee behavior="scroll" direction="left"> Distribuidora de Ropa </marquee>
+        <img src="https://volca.com/wp-content/uploads/2019/11/terrestre.png" width="55" height="45" border="0"/>
+ <script language="javascript">
+	<!--
+		$(document).ready(function(){
+ 		$("#flip").click(function(){
+ 		$("#panel").slideDown("slow");
+ 	  	 });
+		});
+	//-->
+
 function algoritmo()
 {
     let genero, origen, talla;
@@ -101,85 +51,159 @@ function algoritmo()
     document.formulario1.descuento.value = descuento;
     document.formulario1.monto_a_pagar.value = monto_a_pagar;
 }
- 
         </script>
         <style type="text/css">
 <!--
-.Estilo1 {color: #2e0099}
-.Estilo2 {font-size: 20px}
--->
+		.Estilo3 {color: #000000}
+		.button:hover {background-color:#CBD8EB}
+		    body {	
+			background-color: #DCDCDC;
+			font-family: Arial, Helvetica, sans-serif;	
+			font-size: 1em;	
+			line-height: 2em;	
+			color: #336699;
+			margin-top: 0.1em;
+			margin-right: 0.1em;
+			margin-bottom: 0.1em;
+			margin-left: 0.1em
+			}
+	<style>		
+    .dropbtn {
+    background-color: black;
+    color: white;
+    padding: #px;
+    font-size: #px;
+    border: none;
+	}
+			
+    .dropdown {
+    position: relative;
+    display: inline-block;
+	}
+	
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: #px;
+    z-index: 1;
+	}	
+	
+	.dropdown-content a {
+    color: black;
+    padding: #px #px;
+    text-decoration: none;
+    display: block;
+	}
+	
+	.dropdown-content a:hover {background-color: white;}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {background-color: grey;}	
+	
+	.Estilo4 {font-size: 18}
+.Estilo5 {font-weight: bold}
+	-->
         </style>
 </head>
-    <body>
+</div>
+<body class="p-3 m-0 border-0 bd-example">
+<body>
+	<div class="btn-group" role="group" aria-label="Grupo de botones con menú desplegable anidado" _mstaria-label=	 "1430650">
+      <div class="btn-group" role="group">
+        <div align="center">
+
         <form name="formulario1">
-            <p>&nbsp;</p>
-			<h1 align="center" class="titulo Estilo1">Distribuidora de Ropa: Dama y Varones.</h1>
-            <table border="2" align="center" bordercolor="#000000" bgcolor="#666666" style="text-align: left; margin-left: auto; margin-right: auto;">
+          <div align="center">
+              <p>&nbsp;</p>
+              <table width="365" border="2" align="center" cellpadding="4" cellspacing="3" bordercolor="#000000" bgcolor="#AECEFF" class="Estilo5" style="text-align: left; margin-left: auto; margin-right: auto;"><!--DWLayoutTable-->
                 <tbody>
-                    <tr>
-                        <td width="218" height="38" bordercolor="#000000">
-                            <label for="monto_comprado"><span class="Estilo2">I</span>ngresa el valor de monto comprado:</label>                      </td>
-                        <td width="214" bordercolor="#000000">
-                             <input name="monto_comprado" required="required" step="0.000001" type="number" />                      </td>
-                    </tr>
-                    <tr>
-                        <td height="42">
-                            <label for="genero"><span class="Estilo2">S</span>elecciona el valor de genero:</label>
-                      </td>
-                        <td>
-                            <select name="genero" required="required">
-                                <option value="1">Hombres</option>
-                                <option value="2">Mujeres</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="39">
-                            <label for="origen"><span class="Estilo2">S</span>elecciona el valor de origen:</label>
-                      </td>
-                        <td>
-                            <select name="origen" required="required">
-                                <option value="1">Nacional</option>
-                                <option value="2">Importado</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="40">
-                            <label for="talla"><span class="Estilo2">S</span>elecciona el valor de talla:</label>
-                      </td>
-                        <td>
-                            <select name="talla" required="required">
-                                <option value="1">S</option>
-                                <option value="2">M</option>
-                                <option value="3">L</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr align="center">
-                        <td colspan="2" rowspan="1">
-                            <input type="button" class="Estilo1" onClick="algoritmo();" value="Procesar" />
-                            <input type="reset" class="Estilo1" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="descuento"><span class="Estilo2">V</span>alor de descuento:</label>
-                        </td>
-                        <td>
-                            <input name="descuento" step="0.000001" type="number" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="monto_a_pagar"><span class="Estilo2">V</span>alor de monto a pagar:</label>
-                        </td>
-                        <td>
-                            <input name="monto_a_pagar" step="0.000001" type="number" />
-                        </td>
-                    </tr>
+                  <tr>
+				  <TD><div align="center"><img src="https://th.bing.com/th/id/OIP.5oOg-xZAJXyuAvVXg-O6XQHaE3?pid=ImgDet&rs=1"width="100" height="100"> </div></TD>
+                    <td width="186" bordercolor="#000000" bgcolor="#AECEFF"><div align="center" class="Estilo5"><span class="Estilo3">Ingresa el valor de monto comprado</span>:
+                    </div>
+                    <td width="146" bordercolor="#000000" bgcolor="#AECEFF">
+                      <div align="left">
+                        <input name="monto_comprado" type="number" required="required" step="0.000001" />
+                      </div></td>
+                  </tr>
+                  <tr>
+				  <TD><div align="center"><img src="https://cdn-01.media-brady.com/store/stes/media/catalog/product/cache/9/image/85e4522595efc69f496374d01ef2bf13/1563980804/d/m/dmeu_gplyp_a_141_311_1_std.lang.all.gif"width="100" height="100"> </div></TD>
+                    <td bordercolor="#000000" bgcolor="#AECEFF"><span class="Estilo3">
+                      <blockquote>
+                        <p>Selecciona el valor de genero:</p>
+                      </blockquote>
+                    </span></td>
+                    <td bordercolor="#000000" bgcolor="#AECEFF"><div align="center"><span class="Estilo3">
+                      <select name="genero" class="Estilo5" required="required">
+                        <option value="1">Hombres</option>
+                        <option value="2">Mujeres</option>
+                      </select>
+                    </span></div></td>
+                  </tr>
+                  <tr>
+				  <TD><div align="center"><img src="https://i0.pngocean.com/files/67/588/1022/money-banknote-illustration-cartoon-hand-painted-banknotes.jpg"width="100" height="100"> </div></TD>
+                    <td bordercolor="#000000" bgcolor="#AECEFF"><span class="Estilo3">
+                      <blockquote>
+                        <p>Selecciona el valor de origen:</p>
+                      </blockquote>
+                    </span></td>
+                      <td bordercolor="#000000" bgcolor="#AECEFF"><div align="center"><span class="Estilo3">
+                        <select name="origen" class="Estilo5" required="required">
+                          <option value="1">Nacional</option>
+                          <option value="2">Importado</option>
+                        </select>
+                      </span> </div></td>
+                  </tr>
+                  <tr>
+				  <TD><div align="center"><img src="https://th.bing.com/th/id/OIP.NJm5Gle2WN2pHgVwRJztVgHaH3?pid=ImgDet&rs=1" width="100" height="100"> </div></TD>
+                    <td bordercolor="#000000" bgcolor="#AECEFF"><span class="Estilo3">
+                      <blockquote>
+                        <p>Selecciona el valor de talla:</p>
+                      </blockquote>
+                    </span></td>
+                      <td bordercolor="#000000" bgcolor="#AECEFF"><div align="center"><span class="Estilo3">
+                        <select name="talla" class="Estilo5" required="required">
+                          <option value="1">S</option>
+                          <option value="2">M</option>
+                          <option value="3">L</option>
+                      </select>
+                      </span> </div></td>
+                  </tr>
+                  <tr align="center">
+                    <td colspan="2" rowspan="1" align="left" bordercolor="#000000" bgcolor="#AECEFF">
+                      <div align="center"><span class="Estilo3">
+                      <input type="button" class="Estilo5" onClick="algoritmo();" value="Procesar" />
+                      </span> <span class="Estilo3">
+                      <input name="reset" type="reset" class="Estilo5" />
+                    </span></div></td>
+                  </tr>
+                  <tr>
+				   <TD><div align="center"><img src="https://th.bing.com/th/id/R.2ba8e2637a77dcae13004fdbf97c68e8?rik=zgGTwIwXqSENHA&pid=ImgRaw&r=0" width="100" height="100"> </div></TD>
+                    <td bordercolor="#000000" bgcolor="#AECEFF"><span class="Estilo3">
+                      <blockquote>
+                        <p>Valor de descuento:</p>
+                      </blockquote>
+                    </span></td>
+                      <td bordercolor="#000000" bgcolor="#AECEFF">
+                        <div align="center">
+                          <input name="descuento" type="number" step="0.000001" />                        
+                    </div></td>
+                  </tr>
+                  <tr>
+				  <TD><div align="center"><img src="https://t4.ftcdn.net/jpg/01/31/83/03/500_F_131830363_X2MyJMpQkj8A4Urqk3IuWbzV7RxJscwG.jpg" width="100" height="100"> </div></TD>
+                    <td bordercolor="#000000" bgcolor="#AECEFF"><span class="Estilo3">
+                      <blockquote>
+                        <p class="Estilo5">Valor de monto a pagar:</p>
+                      </blockquote>
+                    </span></td>
+                      <td bordercolor="#000000" bgcolor="#AECEFF">
+                        <div align="center">
+                          <input name="monto_a_pagar" type="number" step="0.000001" />                        
+                    </div></td>
+                  </tr>
                 </tbody>
-          </table>
+            </table>
+          </div>
         </form>
-    </body>
+</body>
 </html>
